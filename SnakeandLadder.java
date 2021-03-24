@@ -5,6 +5,7 @@ public class SnakeandLadder {
 		System.out.println("WECOME TO SNAKE AND LADDER PROBLEMS");
 		int position=0;
 		System.out.println("Initial Position of Player : "+position);
+		int count=0;
 		
 		
 		while(position<100)
@@ -13,6 +14,8 @@ public class SnakeandLadder {
 			//Formula = Math.random() * (max - min + 1) + min
 			int Dice = (int) Math.floor(Math.random()*(6-1+1)+1);
 			System.out.println("Number on Dice : "+Dice);
+			count++;
+			System.out.println(count);
 			int Option = (int) Math.floor(Math.random()*10)%3;
 			
 			System.out.println("====OPTIONS======\nOption 0 : No Play\nOption 1 : Ladder \nOption 2 : Snake \n");
@@ -55,6 +58,7 @@ public class SnakeandLadder {
 
 		
 		}
+		System.out.println("Number of times the dice was rolled : "+count);
 		
 	}		
 	}
