@@ -25,11 +25,11 @@ public class SnakeandLadder {
 			else if (Option == 1)
 			{
 				position = position + Dice;
-				//System.out.println(position);
+				System.out.println("Position : "+position);
 				if(position > 100)
 				{
-					position=100;
-					System.out.println("Player has won : "+position);
+					position = position - Dice;
+					System.out.println("Player comes back to the previous position : "+position);
 				}
 				else if (position == 100)
 				{
@@ -39,9 +39,7 @@ public class SnakeandLadder {
 				{
 					System.out.println("Player moves ahead by : "+position);
 				}
-					
-					
-				
+						
 			}
 			else 
 			{
